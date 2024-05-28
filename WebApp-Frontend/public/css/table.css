@@ -1,0 +1,90 @@
+.container-add-search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.buscador{
+    border:1px solid #D6D8DF !important;
+    color: #858796;
+}
+
+input:focus{
+    outline:none !important;
+} 
+
+.modal-header{
+    background:#4e73df ;
+    color: #fff;
+}
+
+.close{
+    color: #fff !important;
+}
+
+.close:hover{
+    color: #fff !important; 
+}
+
+th, td{
+    text-align: center;
+}
+textarea {
+    resize: none;
+}
+
+/*scroll*/
+.table-scroll {
+    max-height: 60vh;  
+    overflow-y: auto;  
+    width: 100%;
+    margin-top: 20px;
+}
+
+.table thead tr{
+    position: sticky;
+    top: 0;
+    background-color: #732c47;
+    color: white;
+    z-index: 10;
+
+}
+.table thead th {
+    border: 2px solid #ffffff;
+}
+.table tbody td {
+    border: 2px solid #dee2e6;
+}
+
+/*filtrador*/
+.filter-buttons {
+    margin-bottom: 10px;
+}
+
+.filter-buttons button {
+    margin-right: 5px;
+    background-color: #b96c86;
+    border-color: #b96c86;
+    color: white;
+}
+
+.filter-buttons button:hover {
+    background-color: #a55d70;
+}
+#drop-item{
+    color: #fff;
+}
+#drop-item:hover{
+    background-color: #a55d70 !important;
+}
+#drop-menu{
+    background: #b96c86;
+    top:-4px !important;
+    border: 2px solid #000;
+}
+
+/*cerrar sesion*/
+#salir:active{
+    background-color: #a55d70 !important;
+}
