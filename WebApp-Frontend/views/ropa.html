@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Coketas</title>
+    <link rel="stylesheet" href="../public/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/styles-cliente.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+<body>
+
+    <nav class="navegacion">
+        <div><a href="tienda.html"><img class="nav-img" src="../public/img/coketa-png.png"></div></a>
+        <div><h3 class="nav-title">COKETAS</h3></div>
+        <div>
+            <a class="ingreso-cliente" href="#"><i style="margin-right: 10px;" class="fa-solid fa-user"></i>Ingresar</a> <span class="pleca-cliente">|</span>
+            <a class="regitrar-cliente" href="#"><i style="margin-right: 10px;" class="fa-solid fa-user-plus"></i>Crear Cuenta</a>
+        </div>
+    </nav>
+
+
+    <main class="contenedor" style="margin-top: 16rem;">
+        <h1 class="title-producto producto__nombre"></h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="../public/img/default.jpg" alt="Imagen del producto"> 
+        
+            <div class="camisa__contenido">
+                <form class="formulario">
+                    <div class="campo__descripcion">
+                        <div class="campo_title">
+                            <span>Descripción:</span>
+                        </div>
+                        <div>
+                            <p class="producto__descripcion"></p>
+                        </div>
+                    </div>
+
+                    <div class="campo__tallas">
+                        <div class="campo_title">
+                            <span>Talla:</span>
+                        </div>
+                        <div class="radio-talla">
+                            <!-- Los radios se añaden dinámicamente aquí -->
+                        </div>
+                    </div>
+        
+                    <div class="campo__cantidad">
+                        <div class="campo_title">
+                            <span>Cantidad:</span>
+                        </div>
+                        <div class="campo_xcantidad">
+                            <button type="button" id="btn-menos">-</button>
+                            <span id="cantidad-total">1</span>
+                            <button type="button" id="btn-mas">+</button>
+                        </div>
+                    </div>
+                    <div class="campo__precio">
+                        <div>
+                            <span>Precio:</span>
+                        </div>
+                        <div>
+                            <p class="producto__precio">Bs. Precio</p>
+                        </div>
+                    </div>
+
+                    <div class="btn-formulario-product">
+                        <button class="formulario__submit" type="button">Agregar al Carrito</button>
+                    </div>
+        
+                </form>
+            </div>
+        </div>
+        
+
+    </main>
+
+
+    <footer class="footer" style="margin-top: 25rem;">
+        <p class="footer__texto">Wanda Quiroz - Todos los derechos Rerservados 2024</p>
+    </footer>
+    
+    
+    <script src="https://kit.fontawesome.com/59c1bdd5c7.js" crossorigin="anonymous"></script>
+    <script src="../public/js/utiles.js"></script>
+    <script src="../public/js/jquery-3.6.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../public/js/vista_producto.js"></script>
+</body>
+</html>
